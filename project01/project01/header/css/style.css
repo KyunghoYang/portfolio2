@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main-color: #940000;
+    --black:#ffffff;
+    --bg:#f9f9f9;
+    --ft:#787878;
+    --border:.1rem solid rgba(199,199,199,0.3);
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s liner;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+   background: var(--bg);
+} 
+
+header{
+    color: var(--ft);
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+
+}
+
+.header .logo img{
+    height: 5rem;
+}
+
+.header .navbar a{
+    margin: 0 1.5rem;
+    font-size: 1.8rem;
+    color: var(--ft);
+}
+
+.header .navbar a span{
+    color: #940000;
+    font-weight: bold;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+   
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top:115%;
+    right:7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform:scaleY(1);
+    opacity: 0;
+
+    transform-origin: top;
+    transition: all .3s;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.header .search-form input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    padding: 1rem;
+    cursor: pointer;
+
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--ft);
+}
+
+
+
+@media(max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; right:-150px;
+        background: var(--bg);
+        width: 15rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar a{
+        color: var(--ft);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header .navbar a:hover{
+        color: var(--main-color);
+    }
+    .header .navbar.active{
+        right: 0;
+
+        }
+
+}

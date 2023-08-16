@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <title>쇼핑몰</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="./images/btn_pip_n_line_logo.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#world">모델</a>
+            <a href="#koreajj">이벤트</a>
+            <a href="#themes">서비스</a>
+            <a href="#">구매</a>
+            <a href="#">고객지원</a>
+            <a href="#">브랜드</a>            
+            <a href="#premium">전기 수소차 |<span> 보조금 조회</span></a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="text" id="search-btn" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3 data-aos="fade-up">SANTA FE</h3>
+            <p data-aos="fade-up">Value from Innovation</p>
+            <a href="#" class="btn" data-aos="fade-right">BRAND</a>
+        </div>
+    </section>
+    <!-- world section start -->
+    <section class="world" id="world">
+        <h1 class="heading">신모델</h1>
+        <div class="row">
+            <swiper-container style="--swiper-navigation-color:#8A755B; --swiper-pagination-color: #8A755B" class="mySwiper"
+            speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+                <swiper-slide>
+                    <div class="image">
+                        <img src="./images/NX05_EXT.jpg" alt="slide1">
+                        <div class="content">
+                            <h3>NX05_EXT</h3>
+                            <p>역동적인 N Line 전용 디자인이 더해져<br>
+                                더 완벽해진 NX05_EXT N Line을 만나보세요.<br>
+                                오프로드 컨셉의 와일드한 디자인이 적용된 <br>
+                                커스터마이징 디자인 패키지.</p>
+                            <!-- <h4>$45</h4> -->
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>                    
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image">
+                        <img src="./images/14._IONIQ_6_KV_Exterior_COVER.jpg" alt="slide2">
+                        <div class="content">
+                            <h3>IONIQ 6</h3>
+                            <p>2023 세계 올해의 자동차 수상 <br>
+                                나의 취향과 감각으로 만들어가는 새로운 세상이 열립니다.<br>
+                                내가 만드는 세상, IONIQ 6를 경험하세요.</p>
+                            <!-- <h4>₩57,000</h4> -->
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image">
+                        <img src="images/14_KONA electric.jpg" alt="slide3">
+                        <div class="content">
+                            <h3>KONA electric</h3>
+                            <p>미래지향적인 새로운 스타일과 <br>
+                                차급을 넘나드는 상품성으로 <br>
+                                새로운 차원의 경험을 선사합니다.</p>
+                            <!-- <h4>₩ 72,000</h4> -->
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+            </swiper-container>
+        </div>
+    </section>
+
+    <!-- koreajj section start -->
+    <section class="koreajj" id="koreajj">
+        <h1 class="heading">프로모션</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/event-e-finance-launching-ev-vehicle-purchase-consult-banner-739x489.jpg" alt="1">
+                <h3>전기차 계약 &<br> 
+                    구매상담 이벤트</h3>
+                <p>2023.06.01-2023.06.30</p>
+                <div class="price">전기차 특화 금융 프로그램 <br>
+                    E-Finance 런칭 기념!</div>
+                <a href="">More</a>
+            </div>
+            <div class="box">
+                <img src="./images/event-myhyundai-carlife-what-summer-coupon-banner-739x489.png" alt="2">
+                <h3>마이현대 카라이프 <br>
+                    - 여름맞이 고객 감사 이벤트</h3>
+                <p>2023.05.28-2023.08.31</p>
+                <div class="price">마이현대는 멤버십, 차량관리, 카라이프 <br>
+                    서비스 기능을 통합한 어플리케이션입니다. </div>
+                <a href="">More</a>
+            </div>
+            <div class="box">
+                <img src="./images/event-myhyundai-app-bluehands-2023-summer-freecare-service-banner-739x489.jpg" alt="3">
+                <h3>여름 특별 무상점검 <br>
+                    서비스 실시</h3>
+                <p> 2023.04.04-2023.07.03</p>
+                <div class="price">차량 점검 서비스
+                    - 에어컨/히터 작동 및 필터 상태, 등화장치, 배터리 상태
+                    - 오일류, 브레이크패트, 타이어</div>
+                <a href="">More</a>
+            </div>
+            <div class="box">
+                <img src="./images//event-hc-purchase-benefits-202307-banner-739x489.jpg" alt="4">
+                <h3>Hyundai Mobility카드 <br>
+                    7월 신차 구매 혜택</h3>
+                <p>2023.04.04-2023.07.10</p>
+                <div class="price">2~3개월 무이자 할부 또는 <br>
+                    20,30,40개월 5.9%, 50개월 6.0%</div>
+                <a href="">More</a>
+            </div>
+        </div>
+    </section>
+    <!-- themes -->
+    <section class="themes" id="themes">
+        <h1 class="heading">Model</h1>
+        <div class="box-container">
+            <div class="box">
+               <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="image">
+                <img data-aos="flip-up" src="./images/the-all-new-grandeur-hybrid-well-side.png" alt="1">
+               </div>
+               <div class="content">                
+                <h4>신뢰할 수 있는 자율 주행,<br>
+                    내구성이 뛰어난 내후성 디자인<br>
+                    탁 트인 풍경, 건축물의 경이로움 또는<br> 
+                    빠르게 움직이는 도시의 거리를 운행</h4>
+                <h3>디 올 뉴 그랜저 Hybrid - 캘리그래피</h3>
+               </div>
+            </div>
+            <div class="box">
+               <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="image">
+                <img data-aos="flip-up" src="./images/ioniq5-23my-well-side.png" alt="2">
+               </div>
+               <div class="content">                
+                <h4>차로 이탈방지 보조,<br>
+                    차로 유지 보조, 지능형 속도 제한 보조,<br>
+                    후방 교차 충돌방지 보조, 안전 하차 보조<br>
+                    운전자 주의 경고, 하이빔 보조,</h4>
+                <h3>디 올 뉴 그랜저 Hybrid - 익스클루시브</h3>
+               </div>
+            </div>
+            <div class="box">
+               <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="image">
+                <img data-aos="flip-up" src="./images/palisade-24my-well-side.png" alt="3">
+               </div>
+               <div class="content">                
+                <h4>초점 거리 26mm의 다용도 광각 렌즈<br>
+                    컴팩트하면서 가벼운 디자인으로<br>
+                    거리 스냅 및 보도 사진 촬용에 안성맞춤<br>
+                    프로 사진가들을 위한 이상적인 사진 도구</h4>
+                <h3>디 올 뉴 그랜저 Hybrid - 프리미엄</h3>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- premium section start -->
+    <section class="premium" id="premium">
+        <h1 class="heading">고객지원</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./images/main_myhyundai_home.jpg" alt="">
+                </div>
+                <p>보유 차량 정보에 따른 맞춤 정보형 UI 통해 제공</p>
+                <h3>홈</h3>
+                <a href="">APP</a>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./images/main_myhyundai_garage.jpg" alt="">
+                </div>
+                <p>차량정보 및 유지비 관리를 포함한 쉬운 차량 관리</p>
+                <h3>차고</h3>
+                <a href="">APP</a>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./images/main_myhyundai_shop.jpg" alt="">
+                </div>
+                <p>당신의 카라이프를 책임질 대표 앱 myHyundai</p>
+                <h3>마이현대</h3>
+                <a href="">APP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- area section start -->
+    <section class="area" id="area">
+        <h1 class="heading">현대자동차 소식</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="content-box">
+                    <div class="title">New</div>
+                    <div class="content">
+                        <div class="conbox1">
+                            <a href="#"><img src="./images/hqdefault (1).jpg" alt="1"></a>
+                            <p>IONIQ 5 | World Premiere | 현대자동차</p>
+                        </div>
+                        <div class="conbox2">
+                            <a href="#"><img src="./images/hqdefault (3).jpg" alt="2"></a>
+                            <p>블루링크 스트리밍 서비스</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        
+            <div class="box">
+                <div class="content-box">
+                    <div class="title">Co-operation</div>
+                    <div class="content">
+                        <div class="conbox1">
+                            <a href="#"><img src="./images/hqdefault (2).jpg" alt="1"></a>
+                            <p>현대자동차 X 스파이더맨 | 어크로스 더 유니버스</p>
+                        </div>
+                        <div class="conbox2">
+                            <a href="#"><img src="./images/hqdefault.jpg" alt="2"></a>
+                            <p>현대차와 함께 떠나는 여행</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        
+            <div class="box">
+                <div class="content-box">
+                    <div class="title">Instagram</div>
+                    <div class="content">
+                        <div class="conbox3">
+                            <a href="#"><img src="./images/brand_02_mobility_for_you_w.jpg" alt="1"></a>
+                            <p>현대차 그룹 | 사회봉사활동</p>
+                        </div>
+                        <!-- <div class="conbox2">
+                            <a href="#"><img src="./images/Rectangle 16 (2).png" alt="2"></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- airhotel section start -->
+    <section class="airhotel" id="airhotel">
+        <h1 class="heading">현대shop</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image1">                   
+                </div>
+                <div class="content">
+                    <div class="title">퀄팅 목쿠션 1+1</div>
+                    <span>순정느낌 그대로</span>                        
+                    <!-- <a href="#" class="btn">bUY</a> -->
+                </div>
+            </div>
+            <div class="box">
+                <div class="image2">                    
+                </div>
+                <div class="content">
+                    <div class="title">내 차도 저공해차량일까?</div>
+                    <span>조회부터 혜택까지!</span>                        
+                    <!-- <a href="#" class="btn">MORE</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="event" id="event">
+        <h1 class="heading"><span>brand</h1>
+        <div class="container">
+            <div class="box box1">
+                <div class="box1">
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="box2">
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="box3">
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="box4">
+                </div>
+            </div>
+            <div class="box box5">
+                <div class="box4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer starts -->
+    <section class="footer" id="footer">
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f" ></a>
+            <a href="#" class="fab fa-instagram" ></a>
+            <a href="#" class="fab fa-youtube" ></a>
+        </div>
+
+        <div class="link">
+            <a href="#">개인정보처리방침</a>
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">고객센터</a>
+        </div>
+        <div class="fin">
+            <p>The first step to getting the things you want out of life</p>
+        </div>
+        <div class="credit">
+            <p>created by 2023. <span>Kyungho</span> | <span>all right reserved</span></p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+
+</html>
